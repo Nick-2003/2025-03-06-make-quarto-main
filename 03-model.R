@@ -14,6 +14,9 @@ model <- glm(survived ~ as.factor(pclass) + sex + age + fare,
   family = "binomial"
 )
 
+print("Waiting for 5s for model to fit...")
+Sys.sleep(5) # Make system sleep for 5 seconds
+
 summary(model)
 
 write_rds(model, opt$output_path)
