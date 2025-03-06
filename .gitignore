@@ -1,3 +1,9 @@
+# Files to not care about 
+output/*
+data/clean/*
+*_files/*
+*.pdf
+
 # History files
 .Rhistory
 .Rapp.history
