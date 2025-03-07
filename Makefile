@@ -1,3 +1,9 @@
+# Run this all at once; remember to put code changes in individual rules
+.PHONY: all clean
+all: 
+	make clean
+	make index.html
+
 data/clean/titanic_clean.csv: 01-load_clean.R data/original/titanic.csv
 	Rscript 01-load_clean.R --file_path=data/original/titanic.csv --output_path=data/clean/titanic_clean.csv
 
