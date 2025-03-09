@@ -1,4 +1,4 @@
-# Files to not care about 
+# Files to not care about
 output/*
 data/clean/*
 *_files/*
@@ -53,3 +53,5 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+/.quarto/
